@@ -1,0 +1,10 @@
+x32
+aikidance@aikidance:~/Assembler$ nasm -f elf32 -g p27.asm
+aikidance@aikidance:~/Assembler$ ld -m elf_i386 p27.o -o p27
+aikidance@aikidance:~/Assembler$ ./p27
+---
+gef➤  b p27.asm:2
+Breakpoint 1 at 0x8049000: file p27.asm, line 4
+gef➤  run
+-----------
+
